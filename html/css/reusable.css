@@ -1,0 +1,24 @@
+.font-dark {
+    font-weight: 500;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.active span {
+    text-decoration: underline;
+    color:#FAFEFD;
+}
+
+.inactive span {
+    color:#FAFEFD;
+}
+
+.img-circle {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.add-hover

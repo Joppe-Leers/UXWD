@@ -1,0 +1,135 @@
+body {
+    min-height:100vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+header {
+    height:50px;
+}
+
+main {
+    min-height:100vh;
+    margin-top:50px;
+    border-radius: 25px 25px 0 0;
+}
+
+.main-content {
+    height:100%;
+    width:100%;
+    max-width:600px;
+}
+
+
+footer {
+    height:60px;
+}
+
+#add_icon span {
+    font-size: 55px;
+}
+
+#icon span{
+    font-size: 40px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+header a:hover{
+    text-decoration: none;
+}
+
+#wrap {
+    width: 100%;
+    position: relative;
+}
+
+.inner {
+    position: relative;
+    z-index: 2;
+}
+
+#wrap:after {
+    content: "\EA35";
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: fixed;
+    font-size: 500px;
+    color: #E5F4F1;
+    top: 50%;
+    left: 50%;
+    margin: -300px 0 0 -200px;
+    z-index: 1;
+}
+
+.navbar .btn::before {
+    font-family: "Material Icons";
+    font-weight:900;
+    content:"\e5ce";
+    padding-right: 4px;
+}
+.navbar .btn.collapsed::before {
+    content:"\e5cf";
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #E5F4F1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #006650;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 999999;
+}
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    background-image: url(../image/loader.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    margin: -40px 0 0 -100px;
+}
+#status img {
+    text-align: center;
+    margin-top: -80px;
+}
